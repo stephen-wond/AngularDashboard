@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>T3 Prods and Promos</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/tableFormatting.css">
+        <link rel="stylesheet" href="css/sideBar.css">
+        <script src="lib/jquery-3.1.0.min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services/apiQuery.js"></script>
+        <script src="js/services/getData.js"></script>
+        <script src="js/controllers/getControllers.js"></script>
+    </head>
+
+<body ng-app="apiViewer">
+    <div id="mySidenav" class="sidenav">
+        <a href="#/generateReport">generateReport</a>
+        <a href="#/getAllTenderTypes">getAllTenderTypes</a>
+        <a href="#/getAllVatCodes">getAllVatCodes</a>
+        <a href="#/getMetadata">getMetadata</a>
+        <a href="#/getProduct">getProduct</a>
+        <a href="#/getProductByCategory">getProductByCategory</a>
+        <a href="#/getProductByEan">getProductByEan</a>
+        <a href="#/getProductCategories">getProductCategories</a>
+        <a href="#/getProductCategory">getProductCategory</a>
+        <a href="#/getProductMaintenance">getProductMaintenance</a>
+        <a href="#/getPromotion">getPromotion</a>
+        <a href="#/getPromotionMaintenance">getPromotionMaintenance</a>
+        <a href="#/getQuickSellButton">getQuickSellButton</a>
+        <a href="#/getQuickSellPageSetup">getQuickSellPageSetup</a>
+        <a href="#/getTenderButton">getTenderButton</a>
+        <a href="#/getTenderPageSetup">getTenderPageSetup</a>
+        <a href="#/getTenderType">getTenderType</a>
+        <a href="#/getTenderTypeMaintenance">getTenderTypeMaintenance</a>
+        <a href="#/getTillSettings">getTillSettings</a>
+        <a href="#/searchProducts">searchProducts</a>
+        <a href="#/searchPromotions">searchPromotions</a>
+    </div>
+
+    <div id="main">
+        <ng-view></ng-view>
+    </div>
+    
+</body>
+
+</html>
